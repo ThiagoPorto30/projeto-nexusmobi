@@ -1,0 +1,10 @@
+.next/
+node_modules/
+public/
+artifacts/
+test-results/
+playwright-report/
+package-lock.json
+next-env.d.ts
+src/app/motion.css
+AGENTS.md
