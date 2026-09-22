@@ -61,3 +61,10 @@ next-env.d.ts
 /public/next.svg
 /public/vercel.svg
 /public/window.svg
+
+# Local presentation tools (not part of the website)
+/Abrir apresentação Nexus.cmd
+/scripts/capture-presentation.mjs
+/scripts/open-presentation.ps1
+/scripts/start-presentation-server.mjs
+/tests/launcher.test.mjs

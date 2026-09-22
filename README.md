@@ -10,9 +10,8 @@ Protótipo de site para bicicletas elétricas, com catálogo de três modelos, i
 - Fotografias locais e catálogo com V40 Pro, V20 Mini e LAF Comfort.
 - Seleção de modelo integrada ao formulário, validação, carregamento e repetição.
 - Layout responsivo, navegação por teclado e preferência por movimento reduzido.
-- Atalho Windows para abrir a versão de produção local.
 
-A página atual usa fotografias e não carrega modelos 3D. Código legado do visualizador permanece no projeto; seus arquivos de mídia não fazem parte desta publicação.
+A página usa fotografias locais e não depende de modelos ou bibliotecas 3D.
 
 ## Executar
 
@@ -36,12 +35,6 @@ npm run start
 
 A instalação e a primeira compilação requerem internet, inclusive para obter as fontes Geist. Depois de preparado o build, a página, as fontes e as fotos são servidas localmente. Links para WhatsApp e Instagram continuam dependendo de conexão.
 
-### Atalho Windows
-
-Após instalar e compilar, dê dois cliques em **Abrir apresentação Nexus.cmd**. Ele abre o navegador depois de confirmar que o site está pronto em `http://127.0.0.1:3000`.
-
-O atalho verifica o projeto, o processo e o build antes de reutilizar um servidor. Se outro programa ocupar a porta, ele informa o conflito sem encerrá-lo. Se um novo build tiver sido gerado, encerre o servidor anterior antes de reabrir o atalho. Ele não instala dependências nem executa builds automaticamente.
-
 ## Validação
 
 ```sh
@@ -53,23 +46,9 @@ npm run build
 npm test
 ```
 
-No Windows, também execute:
-
-```sh
-npm run test:launcher
-```
-
 Os testes de navegador usam Microsoft Edge instalado e podem iniciar o servidor de produção automaticamente. Compile antes de executá-los. Para usar outro navegador, ajuste `channel` em `playwright.config.ts`.
 
-A suíte cobre catálogo, fotos, seleção de produto, campos inválidos, foco, confirmação, repetição, menu móvel, teclado, movimento reduzido, auditoria axe e larguras de 360 a 1440 px. O ensaio de apresentação bloqueia acessos externos e verifica fontes, imagens e ausência de envio ou persistência dos dados. Os testes do atalho verificam início, reutilização e conflito de porta. Testes automatizados não substituem avaliação completa com leitores de tela ou aparelhos físicos.
-
-Para gerar capturas locais com o site já aberto na porta 3000:
-
-```sh
-npm run capture:presentation
-```
-
-As imagens são gravadas em `apresentacao/`, fora do versionamento.
+A suíte cobre catálogo, fotos, seleção de produto, campos inválidos, foco, confirmação, repetição, menu móvel, teclado, movimento reduzido, auditoria axe e larguras de 360 a 1440 px. O ensaio de apresentação bloqueia acessos externos e verifica fontes, imagens e ausência de envio ou persistência dos dados. Testes automatizados não substituem avaliação completa com leitores de tela ou aparelhos físicos.
 
 ## Organização
 
@@ -80,8 +59,7 @@ As imagens são gravadas em `apresentacao/`, fora do versionamento.
 | `src/lib/catalog.ts` | Modelos, especificações, imagens e contatos   |
 | `src/lib/leads.ts`   | Validação e simulação de envio                |
 | `public/images/`     | Fotografias usadas pela página                |
-| `scripts/`           | Abertura local e geração de capturas          |
-| `tests/`             | Testes de dados, navegador e lançador         |
+| `tests/`             | Testes de dados e navegador                   |
 
 Next.js 16, React 19, TypeScript, Tailwind CSS 4 e Lucide. Sem banco de dados, autenticação ou API de recebimento de contatos.
 
@@ -102,6 +80,6 @@ A presença dos arquivos neste repositório não concede direitos de reutilizaç
 
 - **LEADS-001:** integrar recebimento real, validação no servidor, limites de abuso e confirmação de recebimento antes de exibir sucesso.
 - **CONTENT-001:** aprovar imagens, especificações, disponibilidade, entrega, preços e condições de test ride com a Nexus.
-- **RELEASE-001:** definir hospedagem, domínio, privacidade, retenção de dados, responsáveis, monitoramento e reversão. Remover `noindex` somente depois das validações.
+- **RELEASE-001:** definir domínio, privacidade, retenção de dados, responsáveis, monitoramento e reversão. Remover `noindex` somente depois das validações.
 
-Backups, materiais comerciais de apresentação, relatórios locais, instruções da estação de trabalho e o acervo 3D anterior permanecem fora do Git. Este repositório contém o projeto do protótipo; publicar seu código não significa implantar o site.
+Backups, materiais comerciais de apresentação, relatórios locais, instruções da estação de trabalho e o acervo 3D anterior permanecem fora do Git. O repositório inclui apenas o site, suas configurações, documentação e testes. A publicação na Vercel continua sendo uma demonstração; o formulário não recebe contatos reais.
