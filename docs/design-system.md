@@ -72,3 +72,9 @@ Materiais de pesquisa, capturas e apresentação permanecem em pastas ignoradas.
 ## Densidade visual
 
 Remover ícones que apenas repetem o texto de botões, números decorativos, marca d’água atrás do produto e frases duplicadas. Não usar setas como assinatura visual. Reservar ícones para controles, estados e categorias que ajudem a leitura. A fotografia, o produto e a hierarquia tipográfica conduzem a página.
+
+## Rodapé e páginas de apoio
+
+Rodapé em três colunas no desktop, duas no tablet e uma no celular: marca e apresentação, navegação e canais de atendimento. Instagram e WhatsApp usam símbolos vetoriais locais, acompanhados do nome do canal; os ícones são decorativos para leitores de tela. Não adicionar setas, selos, endereços ou horários sem necessidade e confirmação.
+
+A faixa inferior reúne copyright, identificação da demonstração e link de privacidade. Os links para seções usam o caminho da página inicial, funcionando também em `/privacidade`. A página de privacidade mantém cores e tipografia da marca e descreve somente o comportamento implementado: formulário simulado, sem envio ou persistência, canais externos e possível processamento técnico pela hospedagem. Não substitui uma política revisada para a operação comercial futura.

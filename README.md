@@ -2,7 +2,7 @@
 
 Protótipo de site para bicicletas elétricas, com catálogo de três modelos, identidade visual própria e uma jornada demonstrativa de consulta de preços e test ride.
 
-**Status:** protótipo para apresentação. O formulário valida os campos e simula a confirmação; não transmite dados, não armazena contatos e não agenda visitas. A mensagem de sucesso representa a interface proposta, não um recebimento real pela loja. O apresentador deve esclarecer isso antes de demonstrar o envio. Não utilizar esta versão para captação pública.
+**Status:** protótipo para apresentação. O formulário valida os campos e simula a confirmação; não transmite dados, não armazena contatos e não agenda visitas. A interface informa a simulação antes e depois do envio. Use dados fictícios na apresentação. Para contato real, use o WhatsApp da Nexus.
 
 ## O projeto
 
@@ -11,6 +11,7 @@ Protótipo de site para bicicletas elétricas, com catálogo de três modelos, i
 - Fotografias locais e catálogo com V40 Pro, V20 Mini e LAF Comfort.
 - Seleção de modelo integrada ao formulário, validação, carregamento e repetição.
 - Layout responsivo, navegação por teclado e preferência por movimento reduzido.
+- Rodapé com navegação, ícones de Instagram e WhatsApp e página `/privacidade` descrevendo o funcionamento desta demonstração.
 
 O [design system](docs/design-system.md) registra a direção visual, referências, tokens e componentes. As cores são uma interpretação visual do perfil, sujeita à aprovação da marca.
 

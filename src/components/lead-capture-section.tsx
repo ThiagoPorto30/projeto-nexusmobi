@@ -1,13 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState, type FormEvent } from "react";
-import {
-  Check,
-  CheckCircle2,
-  LoaderCircle,
-  LockKeyhole,
-  MessageCircle,
-} from "lucide-react";
+import Link from "next/link";
+import { SocialIcon } from "./social-icon";
+import { Check, CheckCircle2, LoaderCircle, LockKeyhole } from "lucide-react";
 import { bikes, contact, type BikeId } from "@/lib/catalog";
 import {
   formatPhone,
@@ -142,7 +138,7 @@ export function LeadCaptureSection() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <MessageCircle size={22} />
+            <SocialIcon name="whatsapp" size={24} />
             <span>
               Prefere uma conversa direta?
               <strong>Chame no WhatsApp</strong>
@@ -171,8 +167,8 @@ export function LeadCaptureSection() {
                 novo caminho!
               </h3>
               <p>
-                Recebemos seu interesse. Nossa equipe vai conversar com você
-                sobre os próximos passos.
+                Demonstração concluída. Nenhuma solicitação foi enviada. Para
+                falar com a Nexus, use o WhatsApp.
               </p>
               <button
                 className="button button-accent"
@@ -330,8 +326,14 @@ export function LeadCaptureSection() {
                   )}
                 </button>
                 <p className="privacy-note">
-                  <LockKeyhole size={13} /> Seus dados serão usados para atender
-                  à sua solicitação.
+                  <LockKeyhole size={15} aria-hidden="true" />
+                  <span>
+                    Demonstração: use dados fictícios. Nada é enviado pelo
+                    formulário.{" "}
+                    <Link href="/privacidade">
+                      Saiba mais sobre privacidade.
+                    </Link>
+                  </span>
                 </p>
               </form>
             </>

@@ -1,7 +1,7 @@
 import Image from "next/image";
-export function Brand() {
+export function Brand({ href = "#" }: { href?: string }) {
   return (
-    <a href="#" aria-label="nexus.mobi — início" className="brand">
+    <a href={href} aria-label="nexus.mobi — início" className="brand">
       <span className="brand-crop">
         <Image
           src="/brand/nexus-profile.jpg"
