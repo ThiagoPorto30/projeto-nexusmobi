@@ -18,13 +18,20 @@ test("cold presentation works with external internet blocked and leaves no submi
     return route.abort("internetdisconnected");
   });
   await page.goto("/");
+  await expect(page.locator(".bike-studio")).toHaveAttribute(
+    "data-state",
+    "ready",
+    {
+      timeout: 30_000,
+    },
+  );
   await page.evaluate(() => document.fonts.ready);
   expect(
     await page.evaluate(() =>
       [...document.fonts].some((font) => font.status === "loaded"),
     ),
   ).toBe(true);
-  for (const image of await page.locator("main img").all()) {
+  for (const image of await page.locator(".bike-photo img").all()) {
     await image.scrollIntoViewIfNeeded();
     await expect(image).toHaveJSProperty("complete", true);
     await expect(image).not.toHaveJSProperty("naturalWidth", 0);

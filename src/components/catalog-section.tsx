@@ -12,18 +12,18 @@ export function CatalogSection() {
       <div className="shell">
         <div className="section-heading">
           <div>
-            <p className="eyebrow">ENCONTRE SEU RITMO</p>
+            <p className="eyebrow">01 / A SUA PRÓXIMA BIKE</p>
             <h2 id="catalog-title">
-              Uma bike para
+              Três jeitos de
               <br />
-              <span className="muted-heading">cada movimento.</span>
+              <span className="muted-heading">seguir em frente.</span>
             </h2>
           </div>
           <div className="catalog-intro">
             <p>
-              Qual é o seu próximo destino?
+              Potência, praticidade ou conforto.
               <br />
-              Escolha a companhia certa para chegar lá.
+              Compare. Imagine sua rotina. Escolha o seu caminho.
             </p>
             <span className="collection-tag">
               <span className="status-dot" /> {bikes.length} modelos. Qual é o
@@ -39,7 +39,7 @@ export function CatalogSection() {
                   src={bike.image}
                   alt={bike.imageAlt}
                   fill
-                  sizes="(max-width: 700px) calc(100vw - 40px), (max-width: 1100px) 45vw, 596px"
+                  sizes="(max-width: 700px) calc(100vw - 40px), (max-width: 1000px) 45vw, 400px"
                 />
                 <span className="photo-tag">{bike.category}</span>
                 <span className="photo-number">0{i + 1}</span>

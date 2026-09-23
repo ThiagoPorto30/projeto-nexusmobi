@@ -52,8 +52,9 @@ next-env.d.ts
 *.lnk
 *.log
 
-# Legacy 3D assets are not used by the current photo-based page
-/public/models/
+# Publish only the compressed model used by the studio
+/public/models/*
+!/public/models/v20-brake-pro.bin
 
 # Unused assets from the initial Next.js scaffold
 /public/file.svg

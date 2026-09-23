@@ -8,7 +8,12 @@ test("desktop: editorial hero, catalog, real images and accessibility", async ({
   page.on("pageerror", (error) => errors.push(error.message));
   await page.goto("/");
   await expect(page.getByRole("heading", { level: 1 })).toContainText(
-    "possibilidades",
+    "Mova o seu mundo",
+  );
+  await expect(page.locator(".bike-studio")).toHaveAttribute(
+    "data-state",
+    "ready",
+    { timeout: 30_000 },
   );
   await page.screenshot({ path: "artifacts/desktop-hero.png" });
   await expect(page.locator(".bike-card")).toHaveCount(3);

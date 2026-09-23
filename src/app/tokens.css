@@ -1,0 +1,19 @@
+/* Nexus Studio — tokens semânticos. Guia em docs/design-system.md. */
+:root {
+  --background: #f5f6f1;
+  --foreground: #171b14;
+  --ink: #171b14;
+  --paper: #fafbf6;
+  --accent: #c1ee67;
+  --accent-dark: #4a6b19;
+  --muted: #5d6555;
+  --line: #171b1424;
+  --line-dark: #ecf5da25;
+  --focus: #517814;
+  --error: #a02f24;
+  --section-space: 104px;
+  --radius-card: 18px;
+  --radius-button: 999px;
+  --duration-fast: 180ms;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}

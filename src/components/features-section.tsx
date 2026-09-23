@@ -39,7 +39,7 @@ export function FeaturesSection() {
       <div className="shell">
         <div className="section-heading">
           <div>
-            <p className="eyebrow">O JEITO NEXUS DE IR</p>
+            <p className="eyebrow">02 / CONECTE-SE À CIDADE</p>
             <h2 id="features-title">
               A vida acontece
               <br />
@@ -47,9 +47,9 @@ export function FeaturesSection() {
             </h2>
           </div>
           <p>
-            Mais do que vender bikes.
+            Da primeira dúvida à escolha.
             <br />
-            Conectamos você a uma nova
+            A gente ajuda você a encontrar uma nova
             <br className="desktop-break" /> forma de se movimentar.
           </p>
         </div>

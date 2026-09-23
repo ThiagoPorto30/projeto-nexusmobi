@@ -15,8 +15,8 @@ export default function Home() {
       <Navbar />
       <main id="conteudo">
         <HeroSection />
-        <FeaturesSection />
         <CatalogSection />
+        <FeaturesSection />
         <LeadCaptureSection />
       </main>
       <Footer />

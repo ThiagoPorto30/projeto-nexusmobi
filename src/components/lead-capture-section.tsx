@@ -116,11 +116,11 @@ export function LeadCaptureSection() {
     >
       <div className="shell lead-layout">
         <div className="lead-copy">
-          <p className="eyebrow">SEU PRÓXIMO MOVIMENTO COMEÇA AQUI</p>
+          <p className="eyebrow">03 / VAMOS CONVERSAR</p>
           <h2 id="lead-title" tabIndex={-1}>
-            Bora sentir
+            Seu próximo passo.
             <br />
-            essa <span>liberdade?</span>
+            <span>Mais liberdade.</span>
             <ArrowUpRight className="lead-big-arrow" aria-hidden="true" />
           </h2>
           <p>

@@ -12,7 +12,7 @@ const mono = Geist_Mono({
   display: "swap",
 });
 export const metadata: Metadata = {
-  title: "nexus.mobi | Seu caminho tem outras possibilidades.",
+  title: "Nexus Mobilidade Urbana | Mova o seu mundo.",
   description:
     "Conheça as bikes elétricas da Nexus Mobilidade Urbana. Compare modelos para sua rotina e consulte preços, test rides e condições de entrega no Rio de Janeiro.",
   robots: { index: false, follow: false },
