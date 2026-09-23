@@ -70,13 +70,6 @@ svg {
   gap: 10px;
   margin-bottom: 24px;
 }
-.status-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  display: inline-block;
-  background: var(--accent);
-}
 .accent {
   color: var(--accent);
 }
@@ -177,9 +170,6 @@ svg {
   top: -50px;
   max-width: none;
 }
-.brand-badge {
-  display: none;
-}
 .desktop-links {
   display: flex;
   align-items: center;
@@ -273,19 +263,6 @@ svg {
   isolation: isolate;
   margin-top: -4px;
 }
-.studio-word {
-  position: absolute;
-  top: 5%;
-  inset-inline: 0;
-  text-align: center;
-  color: #ffffff04;
-  font-size: clamp(100px, 25vw, 340px);
-  font-weight: 800;
-  letter-spacing: -0.07em;
-  line-height: 1;
-  pointer-events: none;
-  z-index: -1;
-}
 .studio-floor {
   position: absolute;
   inset: 10% 15% 13%;
@@ -315,28 +292,6 @@ svg {
 }
 .studio-canvas canvas:active {
   cursor: grabbing;
-}
-.studio-caption {
-  position: absolute;
-  left: 0;
-  top: 48%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
-  width: 125px;
-  color: #babfb1;
-  font:
-    9px/1.6 var(--font-geist-mono),
-    monospace;
-  letter-spacing: 0.08em;
-  pointer-events: none;
-}
-.studio-caption > span:last-child {
-  display: block;
-  width: 100%;
-  padding-left: 14px;
-  color: #838979;
 }
 .studio-controls {
   position: absolute;
@@ -482,18 +437,6 @@ h2 {
 .muted-heading {
   color: var(--muted);
 }
-.collection-tag {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  margin-top: 18px;
-  font:
-    10px/1.5 var(--font-geist-mono),
-    monospace;
-}
-.catalog .status-dot {
-  background: #568000;
-}
 .catalog-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -554,21 +497,6 @@ h2 {
   background: #fff;
   color: var(--ink);
 }
-.photo-number {
-  position: absolute;
-  right: 16px;
-  bottom: 16px;
-  font:
-    11px/1 var(--font-geist-mono),
-    monospace;
-  color: #fff;
-  background: #111b;
-  width: 29px;
-  height: 29px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-}
 .bike-info {
   padding: 24px 12px 12px;
   display: flex;
@@ -585,9 +513,6 @@ h2 {
   font-weight: 550;
   line-height: 1.1;
   letter-spacing: -0.05em;
-}
-.bike-heading svg {
-  color: #598006;
 }
 .bike-description {
   font-size: 13px;
@@ -632,17 +557,13 @@ h2 {
   margin-top: auto;
   padding-top: 22px;
 }
-.bike-price > span {
-  color: var(--muted);
-  font-size: 10px;
-}
 .bike-price strong {
   font-size: 12px;
   font-weight: 550;
 }
 .bike-info .button {
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
 }
 .range-note {
   color: var(--muted);
@@ -695,12 +616,6 @@ h2 {
   color: var(--accent);
   margin-bottom: 26px;
 }
-.feature-top > span {
-  font:
-    10px var(--font-geist-mono),
-    monospace;
-  color: #a9b19c;
-}
 .micro-label {
   color: #b1bda0;
   font:
@@ -739,13 +654,6 @@ h2 {
 }
 .lead-copy h2 > span {
   color: #607445;
-}
-.lead-big-arrow {
-  width: 64px;
-  height: 64px;
-  stroke-width: 1;
-  margin-top: 26px;
-  color: #354521;
 }
 .lead-copy > p:not(.eyebrow) {
   max-width: 370px;
@@ -896,7 +804,7 @@ h2 {
 }
 .submit-button {
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 26px;
   font-size: 12px;
 }
@@ -1052,9 +960,6 @@ h2 {
   .studio-canvas {
     inset-inline: 0;
   }
-  .studio-caption {
-    top: 12px;
-  }
   .studio-placeholder {
     inset-inline: 10%;
   }
@@ -1149,13 +1054,6 @@ h2 {
   }
   .studio-placeholder {
     inset: 8px 0 78px;
-  }
-  .studio-caption {
-    display: none;
-  }
-  .studio-word {
-    top: 18%;
-    font-size: 23vw;
   }
   .studio-controls {
     bottom: 65px;

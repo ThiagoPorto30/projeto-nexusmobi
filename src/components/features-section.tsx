@@ -2,28 +2,24 @@ import { BatteryCharging, Armchair, Truck, ShieldCheck } from "lucide-react";
 const features = [
   {
     icon: BatteryCharging,
-    number: "01",
     title: "Mais caminho. Menos tomadas.",
     text: "Compare autonomias anunciadas de até 45 ou 60 km, conforme o modelo.",
     label: "AUTONOMIA",
   },
   {
     icon: Armchair,
-    number: "02",
     title: "O trajeto também importa.",
     text: "Opções pensadas para transformar os deslocamentos em bons momentos.",
     label: "CONFORTO",
   },
   {
     icon: Truck,
-    number: "03",
     title: "Sua nova bike vai até você.",
     text: "Consulte disponibilidade, prazo e condições de entrega para sua região.",
     label: "CONSULTE A ENTREGA",
   },
   {
     icon: ShieldCheck,
-    number: "04",
     title: "Confiança em cada etapa.",
     text: "Converse com a equipe sobre preços e formas de pagamento.",
     label: "ATENDIMENTO",
@@ -39,7 +35,7 @@ export function FeaturesSection() {
       <div className="shell">
         <div className="section-heading">
           <div>
-            <p className="eyebrow">02 / CONECTE-SE À CIDADE</p>
+            <p className="eyebrow">CONECTE-SE À CIDADE</p>
             <h2 id="features-title">
               A vida acontece
               <br />
@@ -55,10 +51,9 @@ export function FeaturesSection() {
         </div>
         <div className="feature-grid">
           {features.map(({ icon: Icon, ...feature }) => (
-            <article key={feature.number} className="feature-card">
+            <article key={feature.label} className="feature-card">
               <div className="feature-top">
                 <Icon size={27} strokeWidth={1.5} />
-                <span>{feature.number}</span>
               </div>
               <p className="micro-label">{feature.label}</p>
               <h3>{feature.title}</h3>

@@ -94,9 +94,6 @@ export function BikeStudio() {
   };
   return (
     <div className="bike-studio" data-state={state} data-view={view}>
-      <div className="studio-word" aria-hidden="true">
-        NEXUS
-      </div>
       <div className="studio-floor" aria-hidden="true" />
       <div
         ref={host}
@@ -140,9 +137,6 @@ export function BikeStudio() {
           </div>
         </div>
       )}
-      <div className="studio-caption">
-        <span className="status-dot" /> ESTÚDIO NEXUS <span>01 / 360°</span>
-      </div>
       {state === "ready" && (
         <div className="studio-controls" aria-label="Controles do modelo 3D">
           <div className="studio-views">

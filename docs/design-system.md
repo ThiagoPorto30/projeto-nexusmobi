@@ -15,7 +15,7 @@ Revisão: 23/09/2026. Direção: um estúdio de mobilidade elétrica com produto
 | Foco escuro               | `--focus`      | `#C1EE67` | Navegação no estúdio e cabeçalho    |
 | Erro                      | `--error`      | `#A02F24` | Erros acompanhados de texto         |
 
-Fonte: Geist Sans para títulos, textos e controles; Geist Mono apenas para índices e legendas técnicas. As fontes são empacotadas pelo Next.js; não há solicitação ao Google durante a visita. Títulos com peso 450–550 e entreletra negativa. Sem itálico decorativo. Título principal responsivo, 56–122 px; títulos de seção 40–80 px; corpo 13–16 px. Textos auxiliares não devem carregar informação essencial sozinhos.
+Fonte: Geist Sans para títulos, textos e controles; Geist Mono apenas para legendas curtas. As fontes são empacotadas pelo Next.js; não há solicitação ao Google durante a visita. Títulos com peso 450–550 e entreletra negativa. Sem itálico decorativo. Título principal responsivo, 56–122 px; títulos de seção 40–80 px; corpo 13–16 px. Textos auxiliares não devem carregar informação essencial sozinhos.
 
 Escala de espaço: 4, 8, 12, 16, 24, 32, 48, 64, 104 px. Container máximo 1320 px. Margens de 48 px no desktop, 32 px no tablet e 20 px no celular. Cartões: 18 px de raio. Botões: formato cápsula, altura mínima 44 px; principais 52 px. Componentes reaproveitam os tokens de `src/app/tokens.css`.
 
@@ -34,7 +34,7 @@ Escala de espaço: 4, 8, 12, 16, 24, 32, 48, 64, 104 px. Container máximo 1320 
 ## Componentes e comportamento
 
 - **Marca:** arquivo original `public/brand/nexus-profile.jpg`, obtido do perfil autorizado pelo usuário. Apresentado por enquadramento CSS sobre preto. O original disponível tem 150 × 150 px; substituir por arquivo vetorial oficial quando recebido. Não ampliar para uso em impressão.
-- **Botão primário:** verde-lima com texto escuro. Uma ação principal por grupo. Botão secundário escuro no catálogo. Links de apoio têm seta e área mínima de toque.
+- **Botão primário:** verde-lima com texto escuro. Uma ação principal por grupo. Botão secundário escuro no catálogo. Links de apoio usam texto claro e área mínima de toque. Setas ficam restritas aos controles de rotação do 3D.
 - **Catálogo:** mesma ordem de informação: fotografia, modelo, proposta, autonomia, especificações, preço sob consulta e contato com modelo selecionado. Não inventar preços, estoque, garantias ou avaliações.
 - **Formulário:** mantém o fluxo demonstrativo existente, sem transmissão ou armazenamento. A integração real continua fora do escopo. O WhatsApp existente é o canal de contato real.
 - **Navegação:** menu móvel com Escape, foco visível, link de salto e conteúdo fechado fora da navegação de teclado.
@@ -68,3 +68,7 @@ Consultadas em 23/09/2026:
 Validar em 360, 390, 768, 1024 e 1440 px: ausência de rolagem horizontal, legibilidade, imagens, teclado, foco, menu, seleção de produto, formulário, carregamento 3D, vistas, falha e nova tentativa. Rodar tipos, lint, formatação, build, testes de dados, navegador e axe. Revisão automática não substitui teste em aparelhos físicos.
 
 Materiais de pesquisa, capturas e apresentação permanecem em pastas ignoradas. Versionar somente assets usados, código, testes e esta documentação do design system.
+
+## Densidade visual
+
+Remover ícones que apenas repetem o texto de botões, números decorativos, marca d’água atrás do produto e frases duplicadas. Não usar setas como assinatura visual. Reservar ícones para controles, estados e categorias que ajudem a leitura. A fotografia, o produto e a hierarquia tipográfica conduzem a página.

@@ -1,4 +1,4 @@
-import { ArrowUpRight, Camera } from "lucide-react";
+import { Camera } from "lucide-react";
 import { Brand } from "./brand";
 import { contact } from "@/lib/catalog";
 export function Footer() {
@@ -21,14 +21,14 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Camera size={19} /> @nexus.mobi <ArrowUpRight size={17} />
+              <Camera size={19} /> @nexus.mobi
             </a>
             <a
               href={contact.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Fale com a Nexus no WhatsApp <ArrowUpRight size={17} />
+              Fale com a Nexus no WhatsApp
             </a>
           </div>
         </div>
@@ -36,9 +36,6 @@ export function Footer() {
           <span>
             © {new Date().getFullYear()} nexus.mobi. Todos os direitos
             reservados.
-          </span>
-          <span>
-            FEITO PARA MOVER VOCÊ. <span className="accent">↗</span>
           </span>
         </div>
       </div>

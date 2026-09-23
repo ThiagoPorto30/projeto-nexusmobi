@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { ArrowUpRight, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Brand } from "./brand";
 import { LeadLink } from "./lead-link";
 const links = [
@@ -54,11 +54,6 @@ export function Navbar() {
       >
         <div className="nav-brand">
           <Brand />
-          <span className="brand-badge">
-            Electric
-            <br />
-            Mobility
-          </span>
         </div>
         <div className="desktop-links">
           {links.map((link) => (
@@ -68,7 +63,7 @@ export function Navbar() {
           ))}
         </div>
         <LeadLink className="button button-accent nav-cta">
-          Consultar test ride <ArrowUpRight size={17} />
+          Consultar test ride
         </LeadLink>
         <button
           className="menu-toggle"
@@ -95,11 +90,10 @@ export function Navbar() {
           {links.map((link) => (
             <a key={link.href} href={link.href} onClick={close}>
               {link.label}
-              <ArrowUpRight size={17} />
             </a>
           ))}
           <LeadLink className="button button-accent" onNavigate={close}>
-            Consultar test ride <ArrowUpRight size={17} />
+            Consultar test ride
           </LeadLink>
         </div>
       </nav>

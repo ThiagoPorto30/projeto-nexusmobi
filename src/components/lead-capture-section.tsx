@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import {
-  ArrowUpRight,
   Check,
   CheckCircle2,
   LoaderCircle,
@@ -116,12 +115,11 @@ export function LeadCaptureSection() {
     >
       <div className="shell lead-layout">
         <div className="lead-copy">
-          <p className="eyebrow">03 / VAMOS CONVERSAR</p>
+          <p className="eyebrow">VAMOS CONVERSAR</p>
           <h2 id="lead-title" tabIndex={-1}>
             Seu próximo passo.
             <br />
             <span>Mais liberdade.</span>
-            <ArrowUpRight className="lead-big-arrow" aria-hidden="true" />
           </h2>
           <p>
             Conte como você pretende usar sua bike. Consulte as condições para
@@ -147,9 +145,7 @@ export function LeadCaptureSection() {
             <MessageCircle size={22} />
             <span>
               Prefere uma conversa direta?
-              <strong>
-                Chame no WhatsApp <ArrowUpRight size={16} />
-              </strong>
+              <strong>Chame no WhatsApp</strong>
             </span>
           </a>
         </div>
@@ -185,7 +181,7 @@ export function LeadCaptureSection() {
                   setStatus("idle");
                 }}
               >
-                Fazer outra solicitação <ArrowUpRight size={18} />
+                Fazer outra solicitação
               </button>
             </div>
           ) : (
@@ -330,7 +326,6 @@ export function LeadCaptureSection() {
                       {selection.intent === "test-ride"
                         ? "Consultar test ride"
                         : "Consultar preços"}
-                      <ArrowUpRight size={19} />
                     </>
                   )}
                 </button>

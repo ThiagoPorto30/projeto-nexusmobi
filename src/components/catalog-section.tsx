@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowUpRight, Route, Zap } from "lucide-react";
+import { Route } from "lucide-react";
 import { bikes } from "@/lib/catalog";
 import { LeadLink } from "./lead-link";
 export function CatalogSection() {
@@ -12,7 +12,7 @@ export function CatalogSection() {
       <div className="shell">
         <div className="section-heading">
           <div>
-            <p className="eyebrow">01 / A SUA PRÓXIMA BIKE</p>
+            <p className="eyebrow">A SUA PRÓXIMA BIKE</p>
             <h2 id="catalog-title">
               Três jeitos de
               <br />
@@ -25,14 +25,10 @@ export function CatalogSection() {
               <br />
               Compare. Imagine sua rotina. Escolha o seu caminho.
             </p>
-            <span className="collection-tag">
-              <span className="status-dot" /> {bikes.length} modelos. Qual é o
-              seu caminho?
-            </span>
           </div>
         </div>
         <div className="catalog-grid">
-          {bikes.map((bike, i) => (
+          {bikes.map((bike) => (
             <article key={bike.id} id={`bike-${bike.id}`} className="bike-card">
               <div className={`bike-photo bike-photo-${bike.id}`}>
                 <Image
@@ -42,12 +38,10 @@ export function CatalogSection() {
                   sizes="(max-width: 700px) calc(100vw - 40px), (max-width: 1000px) 45vw, 400px"
                 />
                 <span className="photo-tag">{bike.category}</span>
-                <span className="photo-number">0{i + 1}</span>
               </div>
               <div className="bike-info">
                 <div className="bike-heading">
                   <h3>{bike.name}</h3>
-                  <Zap size={22} strokeWidth={1.5} />
                 </div>
                 <p className="bike-description">{bike.description}</p>
                 <div className="range">
@@ -65,7 +59,6 @@ export function CatalogSection() {
                   ))}
                 </dl>
                 <div className="bike-price">
-                  <span>Seu próximo movimento</span>
                   <strong>Preço sob consulta</strong>
                 </div>
                 <LeadLink
@@ -73,7 +66,7 @@ export function CatalogSection() {
                   bikeId={bike.id}
                   className="button button-dark"
                 >
-                  Consultar preços <ArrowUpRight size={19} />
+                  Consultar preços
                 </LeadLink>
               </div>
             </article>
@@ -87,7 +80,7 @@ export function CatalogSection() {
         <div className="catalog-help">
           <span>Ainda não sabe qual combina com você?</span>
           <LeadLink className="text-link" intent="prices">
-            A gente te ajuda a escolher <ArrowUpRight size={17} />
+            A gente te ajuda a escolher
           </LeadLink>
         </div>
       </div>

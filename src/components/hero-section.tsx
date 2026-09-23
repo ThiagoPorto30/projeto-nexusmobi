@@ -1,4 +1,3 @@
-import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { LeadLink } from "./lead-link";
 import { BikeStudio } from "./bike-studio";
 
@@ -7,7 +6,7 @@ export function HeroSection() {
     <section className="hero" aria-labelledby="hero-title">
       <div className="shell hero-topline">
         <span>MOBILIDADE ELÉTRICA, SEM COMPLICAR.</span>
-        <span>RIO DE JANEIRO ↗</span>
+        <span>RIO DE JANEIRO</span>
       </div>
       <div className="shell hero-heading">
         <h1 id="hero-title">
@@ -26,11 +25,9 @@ export function HeroSection() {
         </p>
         <div className="hero-actions">
           <a className="button button-accent" href="#modelos">
-            Ver modelos <ArrowDown size={18} />
+            Ver modelos
           </a>
-          <LeadLink className="text-link">
-            Consultar test ride <ArrowUpRight size={18} />
-          </LeadLink>
+          <LeadLink className="text-link">Consultar test ride</LeadLink>
         </div>
       </div>
     </section>
